@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог Device</title>
+</head>
+<body class="catalog-page">
+  <header class="header">
+    <a class="logo header__logo">Device</a>
+
+    <div class="additional-navigation">
+      <input class="search" type="search">
+      <ul class="user-navigation">
+        <li class="user-navigation__item user-navigation__item_login">
+          <a href="#">Валентин Петухов</a>
+        </li>
+        <li class="user-navigation__item user-navigation__item_exit">
+          <a href="#">Выйти</a>
+        </li>
+      </ul>
+      <a class="additional-navigation__item compare" href="#">Сравнить</a>
+      <a class="additional-navigation__item cart" href="#">Корзина</a>
+    </div>
+
+    <nav class="main-navigation">
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item menu-catalog"><a href="#">Каталог товаров</a>
+          <ul class="menu-catalog__list">
+            <li class="menu-catalog__item"><a href="#">Виртуальная реальность</a></li>
+            <li class="menu-catalog__item"><a href="#">Моноподы для селфи</a></li>
+            <li class="menu-catalog__item"><a href="#">Экшн-камеры</a></li>
+            <li class="menu-catalog__item"><a href="#">Фитнес-браслеты</a></li>
+            <li class="menu-catalog__item"><a href="#">Умные браслеты</a></li>
+            <li class="menu-catalog__item"><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li class="main-navigation__item"><a href="#">Доставка</a></li>
+        <li class="main-navigation__item"><a href="#">Гарантия</a></li>
+        <li class="main-navigation__item"><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="breadcrumbs">
+    <h2 class="breadcrumbs__title">Моноподы для селфи</h2>
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs-item">Главная</li>
+      <li class="breadcrumbs-item">Каталог товаров</li>
+      <li class="breadcrumbs-item">Моноподы для селфи</li>
+    </ul>
+  </section>
+
+  <main>
+    <section class="filter">
+      <h2 class="filter__title">Фильтр:</h2>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="filter-form__item filter-form__item-range">
+          <legend class="filter-form__item-title">Стоимость</legend>
+          <div class="range">
+            <div class="range__scale">
+              <div class="range__bar"></div>
+            </div>
+            <div class="range__togle range__togle_min"></div>
+            <div class="range__togle range__togle_max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="price-controls__label">От
+              <input class="price-controls__input price-controls__input_min" type="text" value="0">
+            </label>
+            <label class="price-controls__label">До
+              <input class="price-controls__input price-controls__input_max" type="text" value="5000">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="filter-form__item filter-form__item-color">
+          <legend class="filter-form__item-title">Цвет</legend>
+          <ul class="colors">
+            <li class="colors__item">
+              <input class="visually-hidden colors__checkbox" id="black" name="black" type="checkbox" checked>
+              <label for="black" class="colors__label">Черный</label>
+            </li>
+            <li class="colors__item">
+              <input class="visually-hidden colors__checkbox" id="white" name="white" type="checkbox">
+              <label for="white" class="colors__label">Белый</label>
+            </li>
+            <li class="colors__item">
+              <input class="visually-hidden colors__checkbox" id="blue" name="blue" type="checkbox" checked>
+              <label for="blue" class="colors__label">Синий</label>
+            </li>
+            <li class="colors__item">
+              <input class="visually-hidden colors__checkbox" id="red" name="red" type="checkbox" checked>
+              <label for="red" class="colors__label">Красный</label>
+            </li>
+            <li class="colors__item">
+              <input class="visually-hidden colors__checkbox" id="pink" name="pink" type="checkbox">
+              <label for="pink" class="colors__label">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filter-form__item filter-form__item-bluetooth">
+            <legend class="filter-form__item-title">Bluetooth:</legend>
+            <ul class="presence-bluetooth">
+              <li class="presence-bluetooth__item">
+                <input class="visually-hidden presence-bluetooth__radio" type="radio" name="bluetooth" id="with-bluetooth" value="on" checked>
+                <label class="presence-bluetooth__label" for="with-bluetooth">Есть</label>
+              </li>
+              <li class="presence-bluetooth__item">
+                <input class="visually-hidden presence-bluetooth__radio" type="radio" name="bluetooth" value="off" id="without-bluetooth">
+                <label class="presence-bluetooth__label" for="without-bluetooth">Нет</label>
+              </li>
+            </ul>
+        </fieldset>
+        <button type="submit" class="btn filter-form__btn">Показать</button>
+      </form>
+    </section>
+
+    <section class="products">
+      <h2 class="visually-hidden">Товары</h2>
+      <section class="sorting">
+        <form action="https://echo.htmlacademy.ru">
+          <h2 class="sorting__title">Сортировка:</h2>
+          <ul class="list-sorting-by">
+            <li class="list-sorting-by__item"><a href="#">По цене</a></li>
+            <li class="list-sorting-by__item"><a href="#"></a></li>
+            <li class="list-sorting-by__item"><a href="#"></a></li>
+          </ul>
+        </form>
+      </section>
+    </section>
+  </main>
+
+</body>
+</html>
