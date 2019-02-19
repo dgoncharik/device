@@ -36,7 +36,7 @@
         <ul class="other-block">
           <li class="user-navigation__item"><a href="#">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+                y="0px" width="10px" height="14px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
                 <rect x="8" y="2" width="1.984" height="8" />
                 <rect y="3" width="1.984" height="7" />
                 <rect x="4" width="2" height="10" />
@@ -84,64 +84,71 @@
   </header>
 
   <main>
-    <section class="slider">
+    <section class="slider container">
       <h2 class="visually-hidden">Краткий обзор товаров</h2>
       <input class="visually-hidden" type="radio" name='slider-radio' id="slide-1" checked>
       <input class="visually-hidden" type="radio" name='slider-radio' id="slide-2">
       <input class="visually-hidden" type="radio" name='slider-radio' id="slide-3">
 
       <div class="slider-controls">
-        <label class="slider-controls__item slider-controls__item_active" for="slide-1"><span class="visually-hidden">Слайд
-            1</span></label>
+        <label class="slider-controls__item slider-controls__item_active" for="slide-1"><span class="visually-hidden">Слайд 1</span></label>
         <label class="slider-controls__item" for="slide-2"><span class="visually-hidden">Слайд 2</span></label>
         <label class="slider-controls__item" for="slide-3"><span class="visually-hidden">Слайд 3</span></label>
       </div>
 
       <ul class="slide-list">
         <li class="slide-list__item slide-list__item_active">
-          <img class="slide-list__item-img" src="img/slider-1.png" alt="Селфи палка" width="384" height="486">
+          <img class="slide-list__item-img" src="img/slider-1.png" alt="Селфи палка" width="560" height="500">
           <div class="slide-wrapper">
-            <b class="slide-list__item-title">Делай селфи, как Бен Стиллер!</b>
+            <b class="slide-list__item-title">Делай селфи, <br> как Бен Стиллер!</b>
             <p class="slide-list__item-text">
               Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
               всего 5 киллограмм.
             </p>
             <a href="#" class="btn slide-list__item-btn">Подробнее</a>
-            <table class="properties">
-              <tr class="property">
-                <td class="property__item">Длина палки</td>
-                <td class="property__item">Вес палки</td>
-                <td class="property__item">Материал</td>
-              </tr>
-              <tr class="descriptions">
-                <td class="descriptions__item">8,5 м</td>
-                <td class="descriptions__item">5 кг</td>
-                <td class="descriptions__item">Карбон</td>
-              </tr>
-            </table>
+            <div class="properties-wrapper">
+              <table class="properties">
+                <tbody>
+                  <tr class="descriptions">
+                    <td class="descriptions__item">8,5 м</td>
+                    <td class="descriptions__item">5 кг</td>
+                    <td class="descriptions__item">Карбон</td>
+                  </tr>
+                  <tr class="property">
+                    <td class="property__item">Длина палки</td>
+                    <td class="property__item">Вес палки</td>
+                    <td class="property__item">Материал</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </li>
 
         <li class="slide-list__item">
-          <img class="slide-list__item-img" src="img/slider-2.png" alt="Фитнес браслет" width="345" height="485">
+          <img class="slide-list__item-img" src="img/slider-2.png" alt="Фитнес браслет" width="560" height="500">
           <div class="slide-wrapper">
             <b class="slide-list__item-title">Худеем правильно!</b>
             <p class="slide-list__item-text">
               Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
             <a href="#" class="btn slide-list__item-btn">Подробнее</a>
-            <table class="properties">
-              <tr class="property">
-                <td class="property__item">Без подзарядки</td>
-              </tr>
-              <tr class="descriptions">
-                <td class="descriptions__item">48 часов</td>
-              </tr>
-            </table>
+            <div class="properties-wrapper">
+              <table class="properties">
+                <tbody>
+                  <tr class="descriptions">
+                    <td class="descriptions__item">48 часов</td>
+                  </tr>
+                  <tr class="property">
+                    <td class="property__item">Без подзарядки</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </li>
         <li class="slide-list__item">
-          <img class="slide-list__item-img" src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
+          <img class="slide-list__item-img" src="img/slider-3.png" alt="Квадрокоптер" width="560" height="500">
           <div class="slide-wrapper">
             <b class="slide-list__item-title">Порхает как бабочка, жалит как пчела!</b>
             <p class="slide-list__item-text">
@@ -149,16 +156,20 @@
               камеру.
             </p>
             <a href="#" class="btn slide-list__item-btn">Подробнее</a>
-            <table class="properties">
-              <tr class="property">
-                <td class="property__item">Дальность полета</td>
-                <td class="property__item">Радиус поражения</td>
-              </tr>
-              <tr class="descriptions">
-                <td class="descriptions__item">800 м</td>
-                <td class="descriptions__item">50 м</td>
-              </tr>
-            </table>
+            <div class="properties-wrapper">
+              <table class="properties">
+                <tbody>
+                  <tr class="descriptions">
+                    <td class="descriptions__item">800 м</td>
+                    <td class="descriptions__item">50 м</td>
+                  </tr>
+                  <tr class="property">
+                    <td class="property__item">Дальность полета</td>
+                    <td class="property__item">Радиус поражения</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </li>
       </ul>
