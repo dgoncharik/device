@@ -91,7 +91,8 @@
       <input class="visually-hidden" type="radio" name='slider-radio' id="slide-3">
 
       <div class="slider-controls">
-        <label class="slider-controls__item slider-controls__item_active" for="slide-1"><span class="visually-hidden">Слайд 1</span></label>
+        <label class="slider-controls__item slider-controls__item_active" for="slide-1"><span class="visually-hidden">Слайд
+            1</span></label>
         <label class="slider-controls__item" for="slide-2"><span class="visually-hidden">Слайд 2</span></label>
         <label class="slider-controls__item" for="slide-3"><span class="visually-hidden">Слайд 3</span></label>
       </div>
@@ -175,66 +176,87 @@
       </ul>
     </section>
 
-    <section class="popular-products">
+    <section class="popular-products container">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-products__list">
-        <li class="popular-product"><a href="#">Виртуальная реальность</a></li>
-        <li class="popular-product"><a href="#">Моноподы для селфи</a></li>
-        <li class="popular-product"><a href="#">Экшн-камеры</a></li>
-        <li class="popular-product"><a href="#">Фитнес-браслеты</a></li>
-        <li class="popular-product"><a href="#">Умные часы</a></li>
-        <li class="popular-product"><a href="#">Квадрокоптеры</a></li>
+        <li class="popular-product vr">
+          <a href="#">Виртуальная реальность</a>
+        </li>
+        <li class="popular-product selfi"><a href="#">Моноподы <br> для селфи</a>
+        </li>
+        <li class="popular-product action-camera">
+          <a href="#">Экшн-камеры</a>
+        </li>
+        <li class="popular-product fitness-braslet">
+          <a href="#">Фитнес-браслеты</a>
+        </li>
+        <li class="popular-product smart-watch">
+          <a href="#">Умные часы</a>
+        </li>
+        <li class="popular-product quadcopters">
+          <a href="#">Квадрокоптеры</a>
+        </li>
       </ul>
     </section>
 
     <section class="services">
-      <h2 class="visually-hidden">Сервисы</h2>
-      <input class="visually-hidden" type="radio" name="services-radio" id="delivery" checked>
-      <input class="visually-hidden" type="radio" name="services-radio" id="warrantly">
-      <input class="visually-hidden" type="radio" name="services-radio" id="credit">
+      <div class="container">
+        <h2 class="visually-hidden">Сервисы</h2>
+        <input class="visually-hidden" type="radio" name="services-radio" id="delivery" checked>
+        <input class="visually-hidden" type="radio" name="services-radio" id="warrantly">
+        <input class="visually-hidden" type="radio" name="services-radio" id="credit">
 
-      <div class="services-controls">
-        <label for="delivery" class="btn services-controls__item services-controls__item_active">Доставка</label>
-        <label for="warrantly" class="btn services-controls__item">Гарантия</label>
-        <label for="credit" class="btn services-controls__item">Кредит</label>
+        <div class="services-controls">
+          <label for="delivery" class="btn services-controls__item services-controls__item_active">Доставка</label>
+          <label for="warrantly" class="btn services-controls__item">Гарантия</label>
+          <label for="credit" class="btn services-controls__item">Кредит</label>
+        </div>
+
+        <ul class="service-list">
+          <li class="service-list__item delivery  service-list__item_active">
+            <h3 class="service-list__item-title">Доставка</h3>
+            <p class="service-list__item-text">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.
+            </p>
+          </li>
+          <li class="service-list__item warranty">
+            <h3 class="service-list__item-title">Гарантия</h3>
+            <p class="service-list__item-text">
+              Если из-за возгорания купленного у нас товара у вас сгорит дом &#8212; не переживайте, мы выдадим вам
+              новый. <br> Товар, не дом, конено же.
+            </p>
+          </li>
+          <li class="service-list__item credit">
+            <h3 class="service-list__item-title">Кредит</h3>
+            <p class="service-list__item-text">
+              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+              кредита. Выгодные для нашего банка, разумеется.
+            </p>
+          </li>
+        </ul>
       </div>
-
-      <ul class="service-list">
-        <li class="service-list__item service-list__item_active">
-          <h3 class="service-list__item-title">Доставка</h3>
-          <p class="service-list__item-text">
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-            заработаем, поднимая его на ваш этаж.
-          </p>
-        </li>
-        <li class="service-list__item">
-          <h3 class="service-list__item-title">Гарантия</h3>
-          <p class="service-list__item-text">
-            Если из-за возгорания купленного у нас товара у вас сгорит дом &#8212; не переживайте, мы выдадим вам
-            новый. Товар, не дом, конено же.
-          </p>
-        </li>
-        <li class="service-list__item">
-          <h3 class="service-list__item-title">Кредит</h3>
-          <p class="service-list__item-text">
-            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
-            кредита. Выгодные для нашего банка, разумеется.
-          </p>
-        </li>
-      </ul>
     </section>
 
-    <section class="brands">
+    <section class="brands container">
       <h2 class="visually-hidden">Брэнды</h2>
       <ul class="brands-list">
-        <li class="brands-item"><a href="#"><img src="img/logo-1.jpg" alt="Dji" width="260" height="100"></a></li>
-        <li class="brands-item"><a href="#"><img src="img/logo-2.jpg" alt="SPgadgets" width="260" height="100"></a></li>
-        <li class="brands-item"><a href="#"><img src="img/logo-3.jpg" alt="GoPro" width="260" height="100"></a></li>
-        <li class="brands-item"><a href="#"><img src="img/logo-4.jpg" alt="Vive" width="260" height="100"></a></li>
+        <li class="brands-item"><a href="#">
+          <img src="img/logo-1.jpg" alt="Dji" width="260" height="100">
+        </a></li>
+        <li class="brands-item"><a href="#">
+          <img src="img/logo-2.jpg" alt="SPgadgets" width="260" height="100">
+        </a></li>
+        <li class="brands-item"><a href="#">
+          <img src="img/logo-3.jpg" alt="GoPro" width="260" height="100">
+        </a></li>
+        <li class="brands-item"><a href="#">
+          <img src="img/logo-4.jpg" alt="Vive" width="260" height="100">
+        </a></li>
       </ul>
     </section>
 
-    <section class="info">
+    <section class="info container">
       <h2 class="visually-hidden">Информация</h2>
       <section class="about-us">
         <h3 class="about-us__title">О нас</h3>
@@ -254,7 +276,7 @@
         <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
         <section class="map">
-          <h4 class="contacts__title">Карта</h4>
+          <h4 class="visually-hidden">Карта</h4>
           <img src="img/map.jpg" alt="ул. Строителей, 15" class="map__img" width="560" height="222">
         </section>
         <a href="#" class="btn">Напишите нам</a>
