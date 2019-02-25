@@ -1415,17 +1415,22 @@ opacity: .1;
   margin: 0;
   border: none;
   padding-right: 68px;
+  margin-bottom: 26px;
 }
 
 .filter-form__item-title {
   padding-top: 12px;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 900;
   font-size: 18px;
   line-height: 24px;
   color: black;
   position: relative;
+}
+
+.filter-form__item-range .filter-form__item-title {
+  margin-bottom: 23px;
 }
 
 .filter-form__item-title::before {
@@ -1439,9 +1444,7 @@ opacity: .1;
 }
 
 .range {
-  /* padding: 15px 0; */
   height: 25px;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, .1);
   box-sizing: border-box;
   position: relative;
 }
@@ -1487,16 +1490,146 @@ opacity: .1;
   position: absolute;
 }
 
+.range__togle:active {
+  transform: scale(1.1);
+}
+
 .range__togle_max {
   left: 53%;
 }
 
+.price-controls {
+  position: relative;
+  top: -6px;
+}
 
+.price-controls__label,
+.price-controls__input {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, .2);
+}
 
+.price-controls__label {
+  margin-right: 7px;
+}
 
+.price-controls__input {
+  width: 65px;
+  height: 20px;
+  border: none;
+  box-sizing: border-box; 
+  padding: 0px 3px;
+  background-color: transparent;
+  margin-left: -4px;
+  outline: none;
+}
 
+.filter-form__item-color {
+  margin-bottom: 31px;
+}
 
+.colors {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.colors__item {
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.colors__label {
+  padding-left: 38px;
+  display: block;
+  position: relative;
+  transition: opacity 100ms;
+}
+
+.colors__label::before {
+  content: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='23px' height='23px' viewBox='0 0 23 23' enable-background='new 0 0 23 23' xml:space='preserve'%3E%3Cpath d='M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3 C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z'/%3E%3C/svg%3E%0A");
+  position: absolute;
+  top: 6px;
+  left: -2px;
+}
+
+.colors__label:hover {
+  opacity: .6;
+}
+
+.colors__label:active {
+  opacity: 1;
+}
+
+.colors__checkbox:checked + .colors__label::before {
+  content: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='27px' height='23px' viewBox='0 0 27 23' enable-background='new 0 0 27 23' xml:space='preserve'%3E%3Cg id='Layer_1'%3E%3C/g%3E%3Cg id='Layer_2'%3E%3Cg%3E%3Cpolygon points='7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 '/%3E%3Cpath d='M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0 H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+.colors__checkbox:disabled + .colors__label {
+  opacity: .25;
+}
+
+.presence-bluetooth {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.presence-bluetooth__item {
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: normal;
+  transition: opacity 100ms;
+}
+
+.presence-bluetooth__item:hover {
+  opacity: .6;
+}
+
+.presence-bluetooth__item:active {
+  opacity: 1;
+}
+
+.presence-bluetooth__label {
+  padding-left: 38px;
+  display: block;
+  position: relative;
+}
+
+.presence-bluetooth__label::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  border: 4px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: -2px;
+}
+
+.presence-bluetooth__radio:checked + .presence-bluetooth__label::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  box-sizing: border-box;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  left: 6px;
+}
+
+.filter-form__btn-submit {
+  width: 200px;
+  margin-top: 4px;
+  margin-left: -2px;
+}
 
 
 
