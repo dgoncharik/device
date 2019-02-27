@@ -438,8 +438,8 @@ img {
   transform: rotate(90deg);
 }
 
-.menu-catalog:hover > .menu-catalog__list {
-  visibility: visible;
+.menu-catalog:hover * {
+  visibility: visible; 
 }
 
 .menu-catalog__list {
@@ -855,12 +855,15 @@ background-position: 13px 49px;
 .brands-item img {
   width: 260px;
   height: 100px;
-  filter: grayscale(100%) opacity(20%);
-  transition : filter 400ms;
+
+  filter: grayscale(100%);
+  opacity: .2;
+  transition: all 150ms;
 }
 
 .brands-item img:hover {
   filter: none;
+  opacity: 1;
 }
 
 .info {
@@ -1861,6 +1864,7 @@ opacity: .1;
   line-height: 24px;
   color: black;
   transition: opacity 100ms;
+  word-wrap: break-word;
 }
 
 .product__name:hover,
