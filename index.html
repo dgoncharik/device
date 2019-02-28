@@ -274,7 +274,7 @@
         <h3 class="contacts__title">Контакты</h3>
         <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
-        <section class="map">
+        <section class="map" id="map">
           <h4 class="visually-hidden">Карта</h4>
           <img src="img/map.jpg" alt="ул. Строителей, 15" class="map__img" width="560" height="222">
         </section>
@@ -409,7 +409,7 @@
     </div>
   </footer>
 
-  <section class="modal modal-feedback">
+  <section class="popup popup-feedback">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="input-form" action="https://echo.htmlacademy.ru" method="POST">
       <p class="input-form__item input-form__item-name">
@@ -426,16 +426,18 @@
       </p>
       <button class="btn input-form__btn" type="submit">Отправить</button>
     </form>
-    <button class="btn-close-modal btn-close-modal_feedback"><span class="visually-hidden">Закрыть</span></button>
+    <button class="btn-close-popup btn-close-popup_feedback"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
-  <section class="modal modal-map">
+  <section class="popup popup-map">
     <h2 class="visually-hidden">Карта</h2>
-    <img class="modal-map__img" src="img/map-big.jpg" alt="ул. Строителей, 15" width="960" height="559">
-    <button class="btn-close-modal btn-close-modal_map"><span class="visually-hidden">Закрыть</span></button>
+    <img class="popup-map__img" src="img/map-big.jpg" alt="ул. Строителей, 15" width="960" height="559">
+    <button class="btn-close-popup btn-close-popup_map"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
-  <script src="js/modals.js"></script>
+  <div class="overlay"></div>
+
+  <script src="js/popups.js"></script>
   <script src="js/sliders.js"></script>
 </body>
 

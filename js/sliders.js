@@ -47,7 +47,8 @@ function Slider (htmlClassLiActive, htmlClassLabelActive) {
 
   this._enableClickRadio = function(slide) {
     var self = this;
-    slide.radio.addEventListener('click', function(){
+    slide.radio.addEventListener('click', function(evt){
+      evt.preventDefault();
       if (self._timerProperties.timerId) {
         self.restartTimer();
       }
