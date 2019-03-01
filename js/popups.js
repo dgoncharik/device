@@ -99,10 +99,3 @@ overlay.addEventListener('click', function(evt) {
     popupMap.classList.remove('popup_show');
   }
 })
-
-// googleMap.addEventListener('keydown', function(evt) {
-//   if (popupMap.classList.contains('popup_show') && (evt.keyCode === 27)) {
-//     evt.preventDefault();
-//     popupMap.classList.remove('popup_show');
-//   }
-// })
