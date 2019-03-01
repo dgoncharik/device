@@ -111,6 +111,7 @@ for(var i=0; i<radioBtnMainSlider.length; i++) {
 mainSlider.enableTimer(10000);
 
 
+
 servicesSlider = new Slider('service-list__item_active', 'services-controls__item_active');
 
 for(var i=0; i<radioBtnServicesSlider.length; i++) {
